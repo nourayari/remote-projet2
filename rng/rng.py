@@ -16,3 +16,6 @@ def rng(how_many_bytes):
 	return Response(
 		os.read(urandom, how_many_bytes),
 		content_type="application/octet-stream")
+
+if __name__ == "__main__":
+app.run(host="0.0.0.0", port=80)
